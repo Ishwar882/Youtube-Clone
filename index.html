@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITube</title>
+    <title>iTube Homepage</title>
     <!--linking Icons-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
-<body>
+<body class="sidebar-hidden">
     <div class="container">
         <!--Navbar-->
         <header>
@@ -19,20 +19,20 @@
                     </button>
                         <a href="#" class="nav-logo">
                             <img src="image/logo.png" alt="logo" class="logo">
-                            <h2 class="logo-text">Itube</h2>
+                            <h2 class="logo-text">iTube</h2>
                         </a>
                 </div>
 
                 <div class="nav-sec">
-                    <div class="nav-button search-back">
+                    <button class="nav-button search-back" id="search-back-button">
                         <i class="bi bi-arrow-left"></i>
-                    </div>
+                    </button>
                 </div>
 
                 <div class="nav-sec center">
-                    <form action="#" class="search-button">
-                        <input type="search" placeholder="search" class="search-input" required>
-                        <button class="nav-button search">
+                    <form action="#" class="search-form">
+                        <input type="search" placeholder="search" class="input" required>
+                        <button class="nav-button search-button">
                             <i class="bi bi-search"></i>
                         </button> 
                     </form>
@@ -42,7 +42,7 @@
                 </div>
 
                 <div class="nav-sec right">
-                    <button class="nav-button search" id="search">
+                    <button class="nav-button search-button" id="search-button">
                         <i class="bi bi-search"></i>
                     </button>
                     <button class="nav-button theme">
@@ -55,6 +55,7 @@
 
         <!--Main Content-->
         <main class="main-content">
+            <div class="screen-overlay"></div>
             
             <!--Sidebar-->
             <aside class="sidebar">
@@ -64,7 +65,7 @@
                     </button>
                     <a href="#" class="nav-logo">
                         <img src="image/logo.png" alt="logo" class="logo">
-                        <h2 class="logo-text">Itube</h2>
+                        <h2 class="logo-text">iTube</h2>
                     </a>
                 </div>
 
@@ -112,15 +113,15 @@
                     <div class="separator"></div>
 
                     <div class="link-section">
-                        <h4 class="link-title">More from Itube</h4>
+                        <h4 class="link-title">More from iTube</h4>
                         <a href="#" class="link">
-                            <i class="bi bi-shield-fill-plus"></i>Itube Plus</a>
+                            <i class="bi bi-shield-fill-plus"></i>iTube Plus</a>
 </a>
                         <a href="#" class="link">
-                            <i class="bi bi-headphones"></i>Itube Music</a>
+                            <i class="bi bi-headphones"></i>iTube Music</a>
                         
                         <a href="#" class="link">
-                            <i class="bi bi-tv-fill"></i>Itube Kids</a>
+                            <i class="bi bi-tv-fill"></i>iTube Kids</a>
                     </div>
                     <div class="separator"></div>
                     
@@ -165,11 +166,11 @@
                 <div class="videos">
                     <a href="#" class="video-frame">
                         <div class="thumbnail-container">
-                            <img src="image/thumbnails/JMUxmLyrhSk-SD.jpg" alt="thumbnail" class="thumbnail">
+                            <img src="image/thumbnails/JMUxmLyrhSk-SD.jpg" alt="video thumbnail" class="thumbnail">
                             <p class="duration">4:52:51</p>
                         </div>
                         <div class="video-info">
-                            <img src="image/user.jpg" alt="user" class="user">
+                            <img src="image/user.jpg" alt="channel logo" class="icon">
                             <div class="info">
                                 <h2 class="title">Artificial Intelligence Full Course | Artificial intelligence Tutorial</h2>
                                 <p class="channel-name">edureka!</p>
@@ -180,11 +181,11 @@
 
                     <a href="#" class="video-frame">
                         <div class="thumbnail-container">
-                            <img src="image/thumbnails/-4GmbBoYQjE-SD.jpg" alt="thumbnail" class="thumbnail">
+                            <img src="image/thumbnails/-4GmbBoYQjE-SD.jpg" alt="video thumbnail" class="thumbnail">
                             <p class="duration">15:46</p>
                         </div>
                         <div class="video-info">
-                            <img src="image/user.jpg" alt="user" class="user">
+                            <img src="image/user.jpg" alt="channel logo" class="icon">
                             <div class="info">
                                 <h2 class="title">I Survived 100 Hours in an Ancient Temple</h2>
                                 <p class="channel-name">MrBeast</p>
@@ -195,11 +196,11 @@
 
                     <a href="#" class="video-frame">
                         <div class="thumbnail-container">
-                            <img src="image/thumbnails/AgQ_nqwceHg-SD.jpg" alt="thumbnail" class="thumbnail">
+                            <img src="image/thumbnails/AgQ_nqwceHg-SD.jpg" alt="video thumbnail" class="thumbnail">
                             <p class="duration">3:53</p>
                         </div>
                         <div class="video-info">
-                            <img src="image/user.jpg" alt="user" class="user">
+                            <img src="image/user.jpg" alt="channel logo" class="icon">
                             <div class="info">
                                 <h2 class="title">Free Short Courses Online</h2>
                                 <p class="channel-name">Shweta Arora</p>
@@ -210,11 +211,11 @@
 
                     <a href="#" class="video-frame">
                         <div class="thumbnail-container">
-                            <img src="image/thumbnails/g4Ffdh41vRQ-SD.jpg" alt="thumbnail" class="thumbnail">
+                            <img src="image/thumbnails/g4Ffdh41vRQ-SD.jpg" alt="video thumbnail" class="thumbnail">
                             <p class="duration">12:52</p>
                         </div>
                         <div class="video-info">
-                            <img src="image/user.jpg" alt="user" class="user">
+                            <img src="image/user.jpg" alt="channel logo" class="icon">
                             <div class="info">
                                 <h2 class="title">Complete Python Programming Roadmap</h2>
                                 <p class="channel-name">CodeWithHarry</p>
@@ -225,11 +226,11 @@
 
                     <a href="#" class="video-frame">
                         <div class="thumbnail-container">
-                            <img src="image/thumbnails/KDZCCQqEUsQ-SD.jpg" alt="thumbnail" class="thumbnail">
+                            <img src="image/thumbnails/KDZCCQqEUsQ-SD.jpg" alt="video thumbnail" class="thumbnail">
                             <p class="duration">0:28</p>
                         </div>
                         <div class="video-info">
-                            <img src="image/user.jpg" alt="user" class="user">
+                            <img src="image/user.jpg" alt="channel logo" class="icon">
                             <div class="info">
                                 <h2 class="title">Not Like Us - Pixer</h2>
                                 <p class="channel-name">Pixarado</p>
@@ -240,11 +241,11 @@
                      
                      <a href="#" class="video-frame">
                         <div class="thumbnail-container">
-                            <img src="image/thumbnails/Kjz_DDO4Fzs-SD.jpg" alt="thumbnail" class="thumbnail">
+                            <img src="image/thumbnails/Kjz_DDO4Fzs-SD.jpg" alt="video thumbnail" class="thumbnail">
                             <p class="duration">3:10:10</p>
                         </div>
                         <div class="video-info">
-                            <img src="image/user.jpg" alt="user" class="user">
+                            <img src="image/user.jpg" alt="channel logo" class="icon">
                             <div class="info">
                                 <h2 class="title">MS Excel Full Course in Hindi</h2>
                                 <p class="channel-name">The iScale</p>
@@ -255,11 +256,11 @@
 
                      <a href="#" class="video-frame">
                         <div class="thumbnail-container">
-                            <img src="image/thumbnails/KwF0T5pI3Ig-SD.jpg" alt="thumbnail" class="thumbnail">
+                            <img src="image/thumbnails/KwF0T5pI3Ig-SD.jpg" alt="video thumbnail" class="thumbnail">
                             <p class="duration">5:51</p>
                         </div>
                         <div class="video-info">
-                            <img src="image/user.jpg" alt="user" class="user">
+                            <img src="image/user.jpg" alt="channel logo" class="icon">
                             <div class="info">
                                 <h2 class="title">Google 10+ FREE AI Courses</h2>
                                 <p class="channel-name">Skillsiya</p>
@@ -270,11 +271,11 @@
 
                      <a href="#" class="video-frame">
                         <div class="thumbnail-container">
-                            <img src="image/thumbnails/LfaMVlDaQ24-SD.jpg" alt="thumbnail" class="thumbnail">
+                            <img src="image/thumbnails/LfaMVlDaQ24-SD.jpg" alt="video thumbnail" class="thumbnail">
                             <p class="duration">25:51:23</p>
                         </div>
                         <div class="video-info">
-                            <img src="image/user.jpg" alt="user" class="user">
+                            <img src="image/user.jpg" alt="channel logo" class="icon">
                             <div class="info">
                                 <h2 class="title">Harvard CS50(2023) - Full Computer Science University Course</h2>
                                 <p class="channel-name">freeCodeCamp.org</p>
@@ -285,11 +286,11 @@
 
                      <a href="#" class="video-frame">
                         <div class="thumbnail-container">
-                            <img src="image/thumbnails/ug1LXrzKPVQ-SD.jpg" alt="thumbnail" class="thumbnail">
+                            <img src="image/thumbnails/ug1LXrzKPVQ-SD.jpg" alt="video thumbnail" class="thumbnail">
                             <p class="duration">5:58</p>
                         </div>
                         <div class="video-info">
-                            <img src="image/user.jpg" alt="user" class="user">
+                            <img src="image/user.jpg" alt="channel logo" class="icon">
                             <div class="info">
                                 <h2 class="title">5 Highest Paying Skills + Courses of 2025</h2>
                                 <p class="channel-name">Ishaan Arora</p>
@@ -300,11 +301,11 @@
 
                      <a href="#" class="video-frame">
                         <div class="thumbnail-container">
-                            <img src="image/thumbnails/yjyWI9wDYNs-SD.jpg" alt="thumbnail" class="thumbnail">
+                            <img src="image/thumbnails/yjyWI9wDYNs-SD.jpg" alt="video thumbnail" class="thumbnail">
                             <p class="duration">11:55:15</p>
                         </div>
                         <div class="video-info">
-                            <img src="image/user.jpg" alt="user" class="user">
+                            <img src="image/user.jpg" alt="channel logo" class="icon">
                             <div class="info">
                                 <h2 class="title">Complete Basic Computer Course</h2>
                                 <p class="channel-name">STP Computer Eduction</p>
